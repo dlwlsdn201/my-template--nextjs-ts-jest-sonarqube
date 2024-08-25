@@ -1,4 +1,4 @@
-export default function Tomato() {
+export default function Root() {
   return (
     <div>
       <div>Root page</div>

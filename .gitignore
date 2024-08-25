@@ -3,6 +3,10 @@
 node_modules
 .next
 
+
 # files
 .tar 
 .zip
+
+# Jest
+coverage
