@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import { NavigationList } from "@shared/config/Navigation";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { NavigationList } from '@shared/config/Navigation';
 
 export const Navigation = ({}): React.ReactElement => {
   const currentPath = usePathname();
 
   const currentArrow = (targetPath: string) =>
-    targetPath === currentPath ? "⇦" : "";
+    targetPath === currentPath ? '⇦' : '';
 
   const navigationItems = NavigationList.map((item) => (
-    <li style={{ display: "flex", gap: "0.5rem" }}>
+    <li style={{ display: 'flex', gap: '0.5rem' }}>
       <Link href={item.path}>{item.label}</Link>
       {currentArrow(item.path)}
     </li>
@@ -19,7 +19,7 @@ export const Navigation = ({}): React.ReactElement => {
 
   return (
     <nav>
-      <ul style={{ listStyle: "none", textDecoration: "none" }}>
+      <ul style={{ listStyle: 'none', textDecoration: 'none' }}>
         {...navigationItems}
       </ul>
     </nav>

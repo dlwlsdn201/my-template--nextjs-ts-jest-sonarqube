@@ -23,6 +23,16 @@
     "noUnusedLocals": true, // 사용되지 않은 변수 검사
     "noUnusedParameters": true, // 사용되지 않은 파라미터들 검사
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/*": ["*"],
+      "@features/*": ["features/*"],
+      "@entities/*": ["entities/*"],
+      "@shared/*": ["shared/*"],
+      "@@types/*": ["types/*"],
+      "@widgets/*": ["widgets/*"],
+      "@assets/*": ["assets/*"],
+      "@app/*": ["app/*"]
+    },
     "types": ["jest", "@testing-library/jest-dom", "@jest/globals"] // Vite, Jest, RTL 타입 추가
   },
   "include": ["app", "shared", "widget", "feature", "entities", "page"],
