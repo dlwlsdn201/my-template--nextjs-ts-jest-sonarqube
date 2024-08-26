@@ -35,6 +35,8 @@
     },
     "types": ["jest", "@testing-library/jest-dom", "@jest/globals"] // Vite, Jest, RTL 타입 추가
   },
-  "include": ["app", "shared", "widget", "feature", "entities", "page"],
+  "include": [    "next-env.d.ts",
+  "**/*.ts",
+  "**/*.tsx"],
   "exclude": ["node_modules", ".next"]
 }
