@@ -10,7 +10,7 @@ const config: Config = {
     '**/?(*.)+(spec|test).?([mc])[jt]s?(x)',
   ],
   collectCoverageFrom: [
-    'src/**/*.{ts,tsx}',
+    '<rootDir>/**/*.{ts,tsx}',
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
@@ -87,7 +87,7 @@ const config: Config = {
     '@widgets/(.*)$': '<rootDir>/src/widgets/$1',
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  moduleDirectories: ['node_modules', 'src'],
+  moduleDirectories: ['node_modules'],
   verbose: true,
 };
 
